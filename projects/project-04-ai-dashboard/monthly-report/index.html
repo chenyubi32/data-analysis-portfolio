@@ -1,0 +1,385 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>南京分行7月经营复盘 FINAL</title><style>:root{--navy:#12314d;--navy2:#214b6a;--ink:#192a38;--muted:#5a6e7e;--line:#dce5eb;--paper:#eef3f6;--white:#fff;--good:#13755f;--goodbg:#e7f5ef;--watch:#a65b22;--watchbg:#fff1e2;--bluebg:#eaf2f8;--soft:#f7fafb}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Segoe UI','Microsoft YaHei','PingFang SC',sans-serif;font-size:14px;line-height:1.55}
+button{font:inherit}
+.layout{display:grid;grid-template-columns:208px minmax(0,1fr);gap:0;max-width:1720px;margin:auto}
+.rail{position:sticky;top:0;align-self:start;height:100vh;background:#10304c;color:#dce8ef;padding:27px 19px;overflow:auto}
+.rail-brand{font-size:18px;font-weight:750;color:#fff;line-height:1.35;letter-spacing:.01em}
+.rail-sub{font-size:12px;color:#a9c1d0;margin-top:8px;padding-bottom:24px;border-bottom:1px solid #33546c}
+.rail-label{font-size:11px;letter-spacing:.12em;color:#91b1c5;margin:21px 9px 9px}
+.rail a{display:block;color:#dce8ef;text-decoration:none;font-size:12px;padding:9px 10px;border-radius:8px;margin:3px 0}
+.rail a:hover,.rail a.active{background:#244d6a;color:#fff}
+.rail-actions{margin-top:28px;border-top:1px solid #33546c;padding-top:18px}
+.rail button{border:1px solid #6f92aa;background:transparent;color:#fff;border-radius:7px;padding:8px 12px;cursor:pointer;width:100%}
+.content{padding:28px 30px 48px;min-width:0}
+.page,.appendix{background:var(--white);border:1px solid #d9e2e8;box-shadow:0 8px 25px rgba(22,48,70,.05);border-radius:4px;max-width:1250px;margin:0 auto 28px;padding:34px 45px 35px;min-height:700px}
+.page{display:flex;flex-direction:column;gap:19px}
+.page-head{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:15px;margin-bottom:1px}
+.eyebrow{color:var(--navy2);font-size:11px;letter-spacing:.08em;font-weight:750}
+.page-no{font-size:12px;color:var(--muted);font-weight:700}
+h1,h2,h3,p{margin:0}
+h1{font-size:29px;line-height:1.28;letter-spacing:-.025em;color:var(--navy);font-weight:750;max-width:1000px}
+h2{font-size:19px;color:var(--navy);line-height:1.3}
+h3{font-size:15px;color:var(--navy)}
+.lede{font-size:14px;color:#405667;max-width:1030px}
+.muted{color:var(--muted)}
+.fine{font-size:11px;color:var(--muted);line-height:1.5}
+.micro{font-size:11px;color:var(--muted)}
+.strong{font-weight:700;color:var(--navy)}
+.tag{display:inline-flex;align-items:center;border-radius:4px;padding:3px 8px;font-size:11px;font-weight:750;letter-spacing:.01em;white-space:nowrap}
+.tag.good{background:var(--goodbg);color:var(--good)}
+.tag.watch{background:var(--watchbg);color:var(--watch)}
+.tag.neutral{background:var(--bluebg);color:var(--navy2)}
+.metric-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.metric{border:1px solid var(--line);background:#fff;border-radius:10px;padding:15px 17px}
+.metric .label{font-size:12px;color:var(--muted);font-weight:650}
+.metric .value{font-size:27px;font-weight:760;color:var(--navy);letter-spacing:-.025em;line-height:1.18;margin-top:6px;white-space:nowrap}
+.metric .context{font-size:11px;color:var(--muted);margin-top:7px}
+.metric.good .value{color:var(--good)}
+.metric.watch .value{color:var(--watch)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.panel{border:1px solid var(--line);border-radius:10px;padding:18px 20px;background:#fff;min-width:0}
+.panel.soft{background:var(--soft)}
+.panel.good-edge{border-left:4px solid var(--good)}
+.panel.watch-edge{border-left:4px solid var(--watch)}
+.panel h3{margin-bottom:10px}
+.section-label{font-size:12px;font-weight:760;letter-spacing:.02em;display:flex;align-items:center;gap:8px;color:var(--navy);margin-bottom:10px}
+.keyline{display:flex;align-items:baseline;gap:9px;margin:5px 0}
+.keyline b{font-size:24px;color:var(--navy);letter-spacing:-.02em}
+.keyline span{font-size:12px;color:var(--muted)}
+.pair{display:flex;justify-content:space-between;gap:16px;margin:8px 0;font-size:13px}
+.pair b{font-weight:750;color:var(--navy);white-space:nowrap}
+.bar-track{width:100%;height:9px;border-radius:99px;background:#e9eef2;overflow:hidden}
+.bar-fill{height:100%;border-radius:99px;background:var(--navy2)}
+.bar-fill.good{background:var(--good)}
+.bar-fill.watch{background:var(--watch)}
+.comparison{display:grid;grid-template-columns:120px 1fr 86px;gap:10px;align-items:center;margin:11px 0;font-size:12px}
+.comparison .bar-track{height:14px}
+.comparison strong{text-align:right;color:var(--navy)}
+.bridge{display:grid;grid-template-columns:140px 1fr 130px;gap:10px;align-items:center;margin:9px 0;font-size:12px}
+.bridge .bar-track{height:12px}
+.bridge strong{text-align:right;color:var(--navy)}
+.good-watch{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.good-watch .panel{height:100%}
+.point{display:flex;gap:10px;margin:9px 0;color:#344a5b;font-size:13px}
+.point::before{content:'';width:6px;height:6px;margin-top:7px;flex:none;border-radius:50%;background:var(--navy2)}
+.point.good::before{background:var(--good)}
+.point.watch::before{background:var(--watch)}
+.page-foot{margin-top:auto;border-top:1px solid var(--line);padding-top:11px;display:flex;justify-content:space-between;gap:16px;font-size:11px;color:var(--muted)}
+.group-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.group-card{padding:15px 17px;border:1px solid var(--line);border-radius:9px;min-width:0}
+.group-top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.group-card h2{font-size:17px}
+.group-main{display:flex;align-items:baseline;gap:10px;margin:8px 0 2px}
+.group-main b{font-size:26px;color:var(--navy);line-height:1.15}
+.group-main span{font-size:12px;color:var(--muted)}
+.group-card .pair{font-size:12px;margin:5px 0}
+.group-card .takeaway{font-size:12px;color:#344a5b;padding-top:7px;margin-top:7px;border-top:1px solid var(--line)}
+.restricted{border:1px solid #d6e1e8;border-left:4px solid #7b92a1;border-radius:8px;background:#f7fafc;padding:11px 15px;display:flex;align-items:center;gap:14px;font-size:12px;color:#455f70}
+.restricted b{color:var(--navy);font-size:16px}
+.case-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.case{border:1px solid var(--line);border-radius:10px;padding:17px 19px;display:flex;flex-direction:column;gap:7px}
+.case .case-number{font-size:11px;font-weight:750;color:var(--good)}
+.case h2{font-size:17px}
+.case .big{font-size:27px;font-weight:750;color:var(--navy);line-height:1.15}
+.case .detail{font-size:12px;color:#405667}
+.case .question{font-size:12px;color:var(--muted);margin-top:auto;padding-top:9px;border-top:1px solid var(--line)}
+.issue{padding:20px;border:1px solid var(--line);border-radius:10px;min-width:0}
+.issue .big{font-size:29px;font-weight:760;color:var(--watch);line-height:1.18;margin:10px 0}
+.issue h2{font-size:16px}
+.issue p{font-size:12px;color:#3e5565}
+.flow-hint{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:12px}
+.flow-hint .arrow{font-size:22px;color:#93a9b8}
+.waterfall-box{border:1px solid var(--line);border-radius:10px;padding:17px 20px;background:#fbfdfe}
+.waterfall-box svg{display:block;width:100%;height:auto;max-height:205px}
+.structure{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.structure .panel{padding:15px 18px}
+.change-list{display:grid;grid-template-columns:1fr 1fr;gap:7px 14px}
+.change-item{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid #e6edf1;padding:5px 0;font-size:12px}
+.change-item b{white-space:nowrap}
+.positive{color:var(--good)}.negative{color:var(--watch)}
+.sales-mini{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.sales-mini .panel{padding:13px 16px}
+.sales-mini .line{display:flex;justify-content:space-between;gap:10px;margin:6px 0;font-size:12px}
+.sales-mini code,.sales-table code{font-family:Consolas,'Courier New',monospace;font-size:11px;white-space:nowrap;color:var(--navy)}
+.callout{background:#f2f7f9;border-left:4px solid var(--navy2);border-radius:2px;padding:11px 14px;font-size:12px;color:#41596b}
+.callout.good{background:var(--goodbg);border-left-color:var(--good)}
+.callout.watch{background:var(--watchbg);border-left-color:var(--watch)}
+.sales-table{width:100%;border-collapse:collapse;font-size:12px}
+.sales-table th{background:#eaf0f4;text-align:left;color:var(--navy);font-weight:750;padding:8px 10px}
+.sales-table td{border-bottom:1px solid var(--line);padding:9px 10px;vertical-align:top}
+.sales-table td.right,.sales-table th.right{text-align:right;white-space:nowrap}
+.sales-table tr:last-child td{border-bottom:none}
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:9px}
+.table-wrap .sales-table{min-width:780px}
+.p7-panels{display:grid;grid-template-columns:1fr;gap:14px}
+.p7-panels>div{min-width:0}
+.direction-grid{display:grid;grid-template-columns:1fr 1fr;gap:17px}
+.direction{border:1px solid var(--line);border-top:4px solid var(--good);border-radius:10px;padding:19px 23px}
+.direction.watch{border-top-color:var(--watch)}
+.direction h2{font-size:20px;margin-bottom:12px}
+.direction ol{margin:0;padding-left:18px}
+.direction li{padding:0 0 12px 4px;font-size:13px}
+.direction li b{color:var(--navy)}
+.direction li span{display:block;color:var(--muted);font-size:12px}
+.closing{font-size:17px;font-weight:650;color:var(--navy);text-align:center;padding:19px 25px;border-top:1px solid var(--line);background:#f8fafb}
+.appendix{min-height:0;padding-top:31px}
+.appendix h1{font-size:24px;margin-bottom:8px}
+.appendix > p{color:var(--muted);font-size:12px;margin-bottom:18px}
+.appendix details{border:1px solid var(--line);border-radius:8px;margin:10px 0;background:#fff}
+.appendix summary{padding:12px 15px;cursor:pointer;font-size:14px;font-weight:700;color:var(--navy)}
+.appendix details .inner{padding:0 15px 16px}
+.appendix .inner p{font-size:12px;margin:8px 0;color:#41596b}
+.appendix .inner ul{font-size:12px;color:#41596b;padding-left:20px}
+.appendix .inner li{margin:5px 0}
+.source-line{margin-top:18px;font-size:11px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px}
+@media(max-width:1050px){.layout{display:block;width:100%;max-width:100%}.rail{position:relative;height:auto;padding:15px 20px}.rail-brand{font-size:16px}.rail-sub,.rail-label,.rail-actions{display:none}.rail nav{display:flex;overflow-x:auto;gap:4px;max-width:100%}.rail a{white-space:nowrap}.content{padding:15px;width:100%}.page,.appendix{padding:25px 25px;min-height:0}}
+@media(max-width:720px){h1{font-size:23px}.metric-row,.group-grid,.case-grid,.grid2,.grid3,.good-watch,.structure,.sales-mini,.direction-grid{grid-template-columns:1fr}.page,.appendix{padding:22px 18px}.page{gap:15px}.metric-row{grid-template-columns:repeat(2,minmax(0,1fr))}.metric .value{font-size:22px}.restricted{flex-wrap:wrap}.page-foot{display:block}.page-foot span{display:block;margin:3px 0}.bridge{grid-template-columns:95px 1fr 95px}.comparison{grid-template-columns:100px 1fr 75px}}
+@media print{@page{size:A4 landscape;margin:9mm}body{background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}.layout{display:block}.rail{display:none}.content{padding:0}.page{page-break-after:always;break-after:page;border:0;box-shadow:none;border-radius:0;margin:0;width:100%;max-width:none;height:188mm;min-height:0;padding:5mm 7mm;overflow:hidden;gap:7px}.page:last-of-type{page-break-after:always}.appendix{border:0;box-shadow:none;border-radius:0;margin:0;width:100%;max-width:none;padding:8mm 9mm}.appendix details{break-inside:avoid}.page-foot{margin-top:auto}h1{font-size:20px}.metric .value{font-size:23px}.case .big{font-size:23px}.group-main b{font-size:22px}.issue .big{font-size:25px}.waterfall-box{padding:9px 12px}.waterfall-box svg{max-height:140px}.structure .panel,.sales-mini .panel{padding:9px 12px}.sales-table td,.sales-table th{padding:5px 6px}.callout{padding:6px 10px}.structure,.sales-mini,.p7-panels{gap:7px}}
+
+/* V2 uses the validated V1 foundation; these rules establish its hierarchy. */
+.v2 .page{gap:16px;padding:34px 45px 31px}
+.v2 h1{font-size:31px;max-width:1100px}
+.v2 .page-intro{font-size:13px;color:#526879;margin-top:-4px}
+.v2 .main-figure{border:1px solid var(--line);border-radius:11px;background:#fff;padding:19px 22px}
+.v2 .chart-title{font-size:16px;font-weight:760;color:var(--navy);line-height:1.3;margin:0 0 12px}
+.v2 .interpretation{border-left:3px solid #8da6b6;background:#f5f8fa;padding:9px 12px;color:#405566;font-size:12px;line-height:1.5}
+.v2 .interpretation b{color:var(--navy)}
+.v2 .interpretation div+div{margin-top:2px}
+.v2 .source-note{font-size:11px;color:var(--muted);line-height:1.45}
+.v2 .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:20px;align-items:stretch}
+.v2 .hero-main{background:#12314d;color:#fff;border-radius:10px;padding:22px 26px;min-height:195px;display:flex;flex-direction:column;justify-content:center}
+.v2 .hero-main .label{font-size:13px;color:#c4d6e2;font-weight:700}
+.v2 .hero-main strong{font-size:61px;line-height:1.09;letter-spacing:-.045em;margin:6px 0}
+.v2 .hero-main .sub{font-size:13px;color:#d6e3eb}
+.v2 .hero-side{border:1px solid var(--line);border-radius:10px;padding:19px 20px;display:flex;flex-direction:column;justify-content:center;gap:9px}
+.v2 .hero-side .value{font-size:30px;font-weight:760;color:var(--good);line-height:1.1}
+.v2 .hero-side .value.watch{color:var(--watch)}
+.v2 .hero-side .small{font-size:12px;color:var(--muted)}
+.v2 .target-progress{height:30px;background:#e6edf1;border-radius:4px;position:relative;overflow:hidden;display:flex}
+.v2 .target-progress .actual{background:var(--navy);height:100%}
+.v2 .target-progress .gap{background:#e5ebef;height:100%}
+.v2 .target-labels{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-top:7px}
+.v2 .target-labels b{font-size:14px;color:var(--navy)}
+.v2 .kpi-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border:1px solid var(--line);border-radius:9px;overflow:hidden}
+.v2 .kpi-strip>div{padding:13px 18px;border-right:1px solid var(--line)}
+.v2 .kpi-strip>div:last-child{border-right:0}
+.v2 .kpi-strip span{display:block;font-size:12px;color:var(--muted)}
+.v2 .kpi-strip b{font-size:20px;color:var(--navy)}
+.v2 .wf-large{display:block;width:100%;height:auto;max-height:310px}
+.v2 .wf-large .axis{font:13px 'Microsoft YaHei',sans-serif;fill:#526a7b}
+.v2 .wf-large .mark{font:700 18px 'Microsoft YaHei',sans-serif;fill:#12314d}
+.v2 .wf-large .mark-plus{font:800 22px 'Microsoft YaHei',sans-serif;fill:#13755f}
+.v2 .wf-large .mark-minus{font:800 20px 'Microsoft YaHei',sans-serif;fill:#a65b22}
+.v2 .split-note{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.v2 .split-note>div{padding:12px 16px;border:1px solid var(--line);border-radius:8px;font-size:12px;color:#465e70}
+.v2 .split-note b{display:block;font-size:23px;color:var(--navy)}
+.v2 .structure-layout{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.v2 .structure-layout .wide{grid-column:1/-1}
+.v2 .structure-layout .main-figure{padding:15px 18px}
+.v2 .stack-row{display:grid;grid-template-columns:55px 1fr 130px;gap:10px;align-items:center;margin:9px 0;font-size:12px}
+.v2 .stack{height:21px;display:flex;background:#e7edf0;border-radius:3px;overflow:hidden}
+.v2 .stack .focus{height:100%;background:var(--navy2)}
+.v2 .stack .other{height:100%;background:#d0dbe2}
+.v2 .stack-row strong{text-align:right;color:var(--navy)}
+.v2 .pair-bars{display:grid;grid-template-columns:105px 1fr 145px;gap:10px;align-items:center;margin:7px 0;font-size:12px}
+.v2 .pair-bars .track{height:12px;background:#f0f3f5;border-radius:3px;overflow:hidden}
+.v2 .pair-bars .line6,.v2 .pair-bars .line7{height:100%;border-radius:3px}
+.v2 .pair-bars .line6{background:#acbeca}.v2 .pair-bars .line7{background:var(--navy2)}
+.v2 .pair-bars .two{display:grid;gap:4px}
+.v2 .pair-bars strong{text-align:right;color:var(--navy);white-space:nowrap}
+.v2 .mini-legend{font-size:11px;color:var(--muted);display:flex;gap:15px;align-items:center}
+.v2 .legend-dot{display:inline-block;width:9px;height:9px;background:var(--navy2);border-radius:2px;margin-right:5px}
+.v2 .legend-dot.base{background:#acbeca}
+.v2 .micro-types{display:flex;gap:9px;flex-wrap:wrap;font-size:11px}
+.v2 .micro-types span{padding:5px 8px;border:1px solid var(--line);border-radius:4px;background:#f8fafb}
+.v2 .micro-types b{color:var(--navy)}
+.v2 .org-layout{display:grid;grid-template-columns:1.1fr .9fr;gap:14px}
+.v2 .quadrant{width:100%;height:auto;max-height:365px}
+.v2 .org-side{display:flex;flex-direction:column;gap:10px}
+.v2 .new-base{border:1px dashed #9eb4c3;border-radius:9px;padding:14px 16px;background:#f7fafb}
+.v2 .new-base b{font-size:23px;color:var(--navy)}
+.v2 .new-base .line{font-size:12px;color:#475f70}
+.v2 .org-mini{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.v2 .org-mini>div{border-top:3px solid var(--navy2);background:#f8fafb;padding:8px 12px;font-size:11px;color:#526879}
+.v2 .org-mini b{display:block;font-size:15px;color:var(--navy)}
+.v2 .evidence-wall{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.v2 .evidence{border:1px solid var(--line);border-left:4px solid var(--good);border-radius:8px;padding:16px 18px;min-height:190px;display:grid;grid-template-rows:auto auto 1fr auto;gap:5px}
+.v2 .evidence h2{font-size:16px}
+.v2 .evidence .big{font-size:30px;font-weight:770;color:var(--good);line-height:1.1}
+.v2 .evidence .next{font-size:11px;color:var(--muted);border-top:1px solid var(--line);padding-top:6px}
+.v2 .mini-bars{display:grid;gap:5px;align-self:center}
+.v2 .mini-bars .r{display:grid;grid-template-columns:70px 1fr 80px;gap:6px;align-items:center;font-size:11px}
+.v2 .mini-bars .track{height:9px;background:#edf1f3;border-radius:3px}
+.v2 .mini-bars .fill{height:100%;background:var(--good);border-radius:3px}
+.v2 .mini-bars strong{text-align:right;white-space:nowrap;color:var(--navy)}
+.v2 .priority{display:grid;grid-template-columns:120px 1fr 130px;gap:12px;align-items:stretch;border-bottom:1px solid var(--line);padding:12px 0}
+.v2 .priority:last-child{border-bottom:0}
+.v2 .priority .scope{font-size:11px;color:var(--muted);font-weight:750;padding-top:2px}
+.v2 .priority .description{font-size:13px;color:#43596a}
+.v2 .priority .description b{display:block;font-size:16px;color:var(--navy)}
+.v2 .priority .number{font-size:24px;font-weight:770;text-align:right;color:var(--watch)}
+.v2 .priority.primary{background:#f7fafb;border-left:4px solid var(--navy);margin:-1px -8px 0;padding:14px 8px}
+.v2 .priority.primary .number{font-size:31px}
+.v2 .case-columns{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.v2 .case-column{border:1px solid var(--line);border-top:4px solid var(--watch);border-radius:9px;padding:16px 18px;min-width:0}
+.v2 .case-column.good{border-top-color:var(--good)}
+.v2 .case-column h2{font-size:18px;margin-bottom:8px}
+.v2 .case-column .result{font-size:27px;font-weight:770;color:var(--navy);margin-bottom:9px}
+.v2 .case-step{border-top:1px solid var(--line);padding:8px 0;font-size:12px;color:#43596a}
+.v2 .case-step strong{color:var(--navy);display:block;font-size:11px;margin-bottom:2px}
+.v2 .case-step .signed{display:flex;gap:8px;flex-wrap:wrap}
+.v2 .case-step .signed span{padding:3px 7px;border-radius:4px;background:#eef5f2;color:var(--good);font-weight:700}
+.v2 .case-step .signed span.minus{background:#fff1e5;color:var(--watch)}
+.v2 .case-column code{font-family:Consolas,'Courier New',monospace;font-size:11px}
+.v2 .action-map{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+.v2 .action-col{border-top:5px solid var(--navy2);background:#f8fafb;border-radius:8px;padding:17px 19px;min-height:300px}
+.v2 .action-col.good{border-top-color:var(--good)}.v2 .action-col.watch{border-top-color:var(--watch)}
+.v2 .action-col h2{font-size:18px;margin-bottom:12px}
+.v2 .action-col li{font-size:12px;margin-bottom:13px;color:#42596b}
+.v2 .action-col li b{display:block;color:var(--navy)}
+.v2 .action-col ul{margin:0;padding-left:17px}
+.v2 .action-closing{font-size:17px;font-weight:700;color:var(--navy);padding:16px 18px;background:#f1f6f8;text-align:center}
+@media(max-width:900px){.v2 .hero-grid,.v2 .org-layout,.v2 .case-columns,.v2 .structure-layout,.v2 .evidence-wall,.v2 .action-map{grid-template-columns:1fr}.v2 .structure-layout .wide{grid-column:auto}.v2 .org-mini{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.v2 .hero-main strong{font-size:43px}.v2 .kpi-strip{grid-template-columns:1fr}.v2 .kpi-strip>div{border-right:0;border-bottom:1px solid var(--line)}.v2 .stack-row{grid-template-columns:42px 1fr 95px}.v2 .pair-bars{grid-template-columns:76px 1fr 102px}.v2 .pair-bars strong{font-size:10px}.v2 .priority{grid-template-columns:65px 1fr 75px;gap:6px}.v2 .priority .number{font-size:19px}.v2 .priority.primary .number{font-size:22px}.v2 .org-mini{grid-template-columns:1fr 1fr}.v2 h1{font-size:23px}}
+@media print{.v2 .page{padding:5mm 7mm;gap:7px}.v2 h1{font-size:20px}.v2 .hero-main{min-height:140px;padding:13px 19px}.v2 .hero-main strong{font-size:44px}.v2 .hero-side{padding:10px 13px}.v2 .main-figure{padding:10px 13px}.v2 .wf-large{max-height:240px}.v2 .quadrant{max-height:260px}.v2 .evidence{padding:10px 12px;min-height:145px}.v2 .action-col{min-height:250px;padding:11px 13px}.v2 .case-column{padding:10px 13px}.v2 .case-step{padding:5px 0}.v2 .priority{padding:7px 0}.v2 .priority.primary{padding:9px 8px}.v2 .interpretation{padding:5px 8px}.v2 #p3{gap:5px}.v2 #p3 .main-figure{padding:7px 10px}.v2 #p3 .pair-bars{margin:4px 0}.v2 #p3 .structure-layout{gap:7px}}
+
+/* Final pass: quieter branch-first pages and lighter organization evidence. */
+.final .final-structure-main{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.final .final-structure-main .main-figure{min-width:0;display:flex;flex-direction:column;justify-content:center;min-height:225px}
+.final .final-structure-main .chart-title{font-size:17px}
+.final .final-structure-sub{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:11px 8px;display:grid;grid-template-columns:1.5fr .7fr;gap:17px;align-items:center}
+.final .final-structure-sub h2{font-size:14px;margin-bottom:8px}
+.final .final-structure-sub .pair-bars{margin:4px 0;grid-template-columns:120px 1fr 150px}
+.final .final-structure-sub p{font-size:12px;color:var(--muted);border-left:3px solid #bac9d2;padding-left:11px}
+.final .state-list{display:grid;gap:0}
+.final .state-band{display:grid;grid-template-columns:150px 190px 1fr;align-items:center;gap:18px;border-bottom:1px solid var(--line);padding:14px 3px}
+.final .state-band:last-child{border-bottom:0}
+.final .state-name b{display:block;font-size:18px;color:var(--navy)}
+.final .state-label{display:inline-block;margin-top:4px;font-size:11px;font-weight:760;color:var(--navy2)}
+.final .state-label.watch,.final .state-signs b.watch{color:var(--watch)}
+.final .state-label.good,.final .state-signs b.good{color:var(--good)}
+.final .state-label.neutral,.final .state-signs b.neutral{color:var(--muted)}
+.final .state-main b{display:block;font-size:22px;color:var(--navy);line-height:1.15}
+.final .state-main span{font-size:11px;color:var(--muted)}
+.final .state-signs{display:grid;grid-template-columns:1fr 1.4fr 1fr;gap:9px}
+.final .state-signs span{font-size:11px;color:var(--muted);white-space:nowrap}
+.final .state-signs b{display:block;font-size:13px;color:var(--navy);font-weight:760}
+.final .signal-list{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.final .signal-row{display:grid;grid-template-columns:40px 1.25fr .6fr 1fr;gap:16px;align-items:center;padding:17px 4px;border-bottom:1px solid var(--line)}
+.final .signal-row:last-child{border-bottom:0}
+.final .signal-index{font-size:11px;font-weight:800;color:#8da7b8;align-self:start;padding-top:4px}
+.final .signal-thesis h2{font-size:17px;margin-bottom:4px}
+.final .signal-thesis p{font-size:12px;color:#526879}
+.final .signal-evidence b{display:block;font-size:25px;color:var(--navy);line-height:1.2}
+.final .signal-row:first-child .signal-evidence b{color:var(--good)}
+.final .signal-evidence b.signal-small{font-size:19px}
+.final .signal-evidence small{color:var(--muted);font-size:11px}
+.final .signal-meaning{border-left:3px solid #c0ced7;padding-left:12px;font-size:12px;color:#43596a}
+.final .signal-track{display:grid;gap:3px;margin:6px 0}
+.final .signal-track span{display:block;height:7px;background:#a9bfcc;border-radius:3px}
+.final .signal-track span.full{width:100%;background:var(--good)}
+.final .signal-states{display:flex;gap:3px;flex-wrap:wrap;margin-top:6px}
+.final .signal-states span{font-size:10px;border:1px solid var(--line);border-radius:3px;padding:2px 4px;color:var(--muted)}
+.final .problem-root{border:1px solid var(--line);border-left:4px solid var(--navy2);border-radius:7px;text-align:center;padding:13px;font-size:14px;color:var(--navy);font-weight:700}
+.final .problem-root b{font-size:20px;margin-left:10px}
+.final .problem-connector{width:1px;height:22px;background:#a4b8c5;margin:0 auto;position:relative}
+.final .problem-connector::after{content:'';position:absolute;top:21px;left:-450px;width:900px;max-width:calc(100vw - 360px);height:1px;background:#a4b8c5}
+.final .problem-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.final .problem-branch{border:1px solid var(--line);border-top:3px solid #adc0cb;border-radius:7px;padding:15px 16px;min-height:225px;display:flex;flex-direction:column}
+.final .problem-kind{font-size:11px;color:var(--muted);font-weight:770}
+.final .problem-branch h2{font-size:16px;margin:10px 0 5px}
+.final .problem-value{font-size:23px;font-weight:770;line-height:1.25;white-space:nowrap}
+.final .problem-value.watch{color:var(--watch)}.final .problem-value.neutral{color:var(--navy2)}
+.final .problem-branch p{font-size:12px;color:#42596b;margin-top:8px}
+.final .problem-branch small{font-size:11px;color:var(--muted);border-top:1px solid var(--line);padding-top:9px;margin-top:auto}
+.final #p7 code{color:#617b8d;font-weight:400;font-size:10px}
+.final .plan-head,.final .plan-row{display:grid;grid-template-columns:1.05fr 1.25fr 1fr;gap:14px;align-items:center}
+.final .plan-head{font-size:11px;font-weight:800;color:var(--navy);padding:7px 12px;background:#eaf1f5;border-radius:5px}
+.final .plan-row{padding:9px 12px;border-bottom:1px solid var(--line);font-size:12px;color:#42596b}
+.final .plan-row:last-child{border-bottom:0}
+.final .plan-focus{display:grid;grid-template-columns:24px 1fr;column-gap:6px}
+.final .plan-focus span{font-size:10px;font-weight:800;color:#91a9b9;grid-row:1/3}
+.final .plan-focus b{font-size:13px;color:var(--navy)}
+.final .plan-focus small{font-size:11px;color:var(--muted)}
+.final .plan-verify,.final .plan-question{font-size:12px}
+.final .plan-question{font-weight:650;color:var(--navy)}
+.final #p8 .action-closing{font-size:15px;padding:12px}
+@media(max-width:900px){.final .final-structure-main{grid-template-columns:1fr}.final .final-structure-sub{grid-template-columns:1fr}.final .state-band{grid-template-columns:110px 150px 1fr;gap:8px}.final .state-signs{grid-template-columns:1fr;gap:3px}.final .signal-row{grid-template-columns:35px 1fr 1fr}.final .signal-meaning{grid-column:2/-1}.final .problem-grid{grid-template-columns:1fr 1fr}.final .problem-connector::after{display:none}}
+@media(max-width:600px){.final .state-band{grid-template-columns:1fr 1fr;padding:12px 3px}.final .state-signs{grid-column:1/-1;grid-template-columns:1fr 1fr;gap:8px}.final .state-signs span{white-space:normal}.final .state-signs span:last-child{grid-column:1/-1}.final .signal-row{grid-template-columns:25px 1fr;gap:7px}.final .signal-evidence,.final .signal-meaning{grid-column:2}.final .problem-grid{grid-template-columns:1fr}.final .problem-branch{min-height:0}.final .plan-head{display:none}.final .plan-row{grid-template-columns:1fr;gap:5px;padding:12px 7px}.final .plan-verify::before{content:'怎么验证：';font-weight:700;color:var(--navy)}.final .plan-question::before{content:'想回答：';font-weight:700;color:var(--navy)}.final .final-structure-sub .pair-bars{grid-template-columns:85px 1fr 100px}}
+@media print{.final .state-band{padding:9px 3px}.final .signal-row{padding:10px 4px}.final .problem-branch{padding:10px 11px;min-height:190px}.final .problem-connector{height:13px}.final .problem-connector::after{top:12px}.final .plan-row{padding:6px 9px}.final #p8 .action-closing{font-size:13px;padding:8px}}
+</style><link rel="stylesheet" href="../../../assets/css/work-nav.css"></head><body><div class="portfolio-return-bar"><a href="../index.html">← 返回项目介绍</a><a href="../../../index.html#projects">全部作品</a><span>毕宸煜 · 数据分析作品集</span></div><div class="layout v2 final"><aside class="rail" aria-label="页面导航"><div class="rail-brand">南京分行<br>7月经营复盘</div><div class="rail-sub">2026年7月 · 部门月报 FINAL</div><div class="rail-label">正文八页</div><nav><a href="#p1">P1　分行总览</a><a href="#p2">P2　增长来源</a><a href="#p3">P3　业务结构</a><a href="#p4">P4　组织地图</a><a href="#p5">P5　亮点证据</a><a href="#p6">P6　经营差异</a><a href="#p7">P7　典型案例</a><a href="#p8">P8　8月行动</a><a href="#appendix">附录　口径与明细</a></nav><div class="rail-actions"><button type="button" onclick="window.print()">打印 / 保存为PDF</button></div></aside><main class="content"><section class="page" id="p1" aria-labelledby="h1">
+      <div class="page-head"><span class="eyebrow">南京分行 · 2026年7月经营复盘</span><span class="page-no">P1 / 8</span></div>
+      <h1 id="h1">7月GMV增至570.79万，但目标完成率76.72%，仍差173.21万</h1><p class="page-intro">7月规模显著扩大；同一时间，正式目标仍未完成。以下先看分行，不先下钻组织。</p>
+<div class="hero-grid"><div class="hero-main"><span class="label">7月分行有效GMV</span><strong>570.79万</strong><span class="sub">6月 264.49万 → 7月 570.79万 · 环比 115.81%</span></div>
+<div class="hero-side"><span class="small">较6月增长</span><div class="value">+115.81%</div><span class="small">正式目标完成率</span><div class="value watch">76.72%</div></div></div>
+<div class="main-figure "><h2 class="chart-title">7月实际已完成目标的76.72%，还差173.21万</h2><div class="target-progress" role="img" aria-label="7月实际GMV570.79万，目标744.00万，缺口173.21万"><div class="actual" style="width:76.720%"></div><div class="gap" style="width:23.280%"></div></div><div class="target-labels"><span>已完成 <b>570.79万</b></span><span>缺口 <b class="negative">173.21万</b></span><span>目标 <b>744.00万</b></span></div><p class=source-note>仅分行有正式月目标；进度以744万为100%。</p></div>
+<div class="kpi-strip"><div><span>成交笔数</span><b>248 → 616笔</b></div><div><span>笔均</span><b>10,665 → 9,266元</b></div><div><span>日均GMV</span><b>8.82万 → 18.41万</b></div></div>
+<div class="interpretation"><div><b>发生了什么：</b>GMV增加306.30万，但距目标173.21万。</div><div><b>意味着什么：</b>成交规模扩大，目标仍需从分行层讨论。</div><div><b>还不能说明：</b>GMV不等于收入、利润或实际放款。</div></div>
+      <div class="page-foot"><span>依据：底表01、15；6月与7月目标不同。</span><span>GMV按成交时间入月；小组和销售为正常历史归属，受限成交单列。</span></div>
+    </section><section class="page" id="p2" aria-labelledby="h2">
+      <div class="page-head"><span class="eyebrow">南京分行 · 2026年7月经营复盘</span><span class="page-no">P2 / 8</span></div>
+      <h1 id="h2">GMV净增306.30万，笔数项+366.73万是主要数学来源</h1><p class="page-intro">把GMV变化拆成成交笔数和笔均两个数学项，先判断增长落点，再讨论真实原因。</p>
+<div class="main-figure "><h2 class="chart-title">7月GMV增长主要靠成交笔数，而非笔均提升</h2><svg class="wf-large" viewBox="0 0 1015 305" role="img" aria-label="量价桥接：6月264.49万，笔数+366.73万，笔均−60.43万，7月570.79万"><line x1="60" x2="950" y1="258.00" y2="258.00" stroke="#c0ced6"/><path d="M230 181.31H325 M460 74.96H555 M690 92.49H785" fill="none" stroke="#a8bac6" stroke-width="2" stroke-dasharray="5 5"/><rect x="95" y="181.31" width="135" height="76.69" rx="4" fill="#214b6a"/><rect x="325" y="74.96" width="135" height="106.34" rx="4" fill="#13755f"/><rect x="555" y="74.96" width="135" height="17.52" rx="4" fill="#a65b22"/><rect x="785" y="92.49" width="135" height="165.51" rx="4" fill="#214b6a"/><text x="162" y="170.31" text-anchor="middle" class="mark">264.49万</text><text x="392" y="63.96" text-anchor="middle" class="mark-plus">+366.73万</text><text x="622" y="63.96" text-anchor="middle" class="mark-minus">−60.43万</text><text x="852" y="81.49" text-anchor="middle" class="mark">570.79万</text><text x="162" y="285" text-anchor="middle" class="axis">6月GMV</text><text x="392" y="285" text-anchor="middle" class="axis">笔数项</text><text x="622" y="285" text-anchor="middle" class="axis">笔均项</text><text x="852" y="285" text-anchor="middle" class="axis">7月GMV</text></svg><p class=source-note>量价采用对称分解，笔数项与笔均项精确相加到GMV变化。</p></div>
+<div class="split-note"><div><b class="positive">248 → 616笔</b>成交笔数增加368笔，对应笔数项+366.73万。</div><div><b class="negative">10,665 → 9,266元</b>笔均下降，对应抵消项−60.43万。</div></div>
+<div class="interpretation"><div><b>发生了什么：</b>笔数项+366.73万，笔均项−60.43万，净增+306.30万。</div><div><b>意味着什么：</b>增长的算术来源是笔数扩张，笔均回落抵消部分增量。</div><div><b>还不能说明：</b>量价数学分解不代表客户、产品或销售动作的业务因果。</div></div>
+      <div class="page-foot"><span>依据：底表01、03；对称量价分解不是业务因果。</span><span>GMV按成交时间入月；小组和销售为正常历史归属，受限成交单列。</span></div>
+    </section><section class="page" id="p3" aria-labelledby="h3">
+      <div class="page-head"><span class="eyebrow">南京分行 · 2026年7月经营复盘</span><span class="page-no">P3 / 8</span></div>
+      <h1 id="h3">7月GMV主要呈现12期和首次成交两项结构特征</h1><p class="page-intro">主视觉只看两个结构：期数与成交序次。金额段和业务类型退为辅助事实，详细结构保留在附录。</p>
+<div class="final-structure-main">
+<div class="main-figure "><h2 class="chart-title">12期占7月GMV的69.70%，是明显的成交结构特征</h2><div class="stack-row"><span>6月</span><div class="stack" style="width:46.338%"><div class="focus" style="width:59.969%"></div><div class="other" style="width:40.031%"></div></div><strong>158.61万</strong></div><div class="stack-row"><span>7月</span><div class="stack"><div class="focus" style="width:69.702%"></div><div class="other" style="width:30.298%"></div></div><strong>397.86万</strong></div><div class="mini-legend"><span><i class="legend-dot"></i>12期</span><span><i class="legend-dot base"></i>其他期数</span></div><p class=source-note>条长按两月最大总GMV统一刻度；收益、风险与业务价值高低未知。</p></div>
+<div class="main-figure "><h2 class="chart-title">首次成交514.29万，构成7月GMV主体</h2><div class="pair-bars"><span>首次成交</span><div class="two"><div class="track"><div class="line6" style="width:49.24%"></div></div><div class="track"><div class="line7" style="width:100.00%"></div></div></div><strong>253.22万→514.29万</strong></div><div class="pair-bars"><span>后续成交</span><div class="two"><div class="track"><div class="line6" style="width:2.19%"></div></div><div class="track"><div class="line7" style="width:10.99%"></div></div></div><strong>11.27万→56.51万</strong></div><div class="mini-legend"><span><i class="legend-dot base"></i>6月</span><span><i class="legend-dot"></i>7月</span></div><p class=source-note>这是成交笔序次，不等于新客/老客价值。</p></div>
+</div>
+<div class="final-structure-sub"><div><h2>金额段补充｜2万—3万元段增加+106.20万</h2><div class="pair-bars"><span>2万—3万元段</span><div class="two"><div class="track"><div class="line6" style="width:26.30%"></div></div><div class="track"><div class="line7" style="width:100.00%"></div></div></div><strong>37.90万→144.10万</strong></div></div><p>7月现金类GMV570.33万，其他业务类型当前金额规模较小。</p></div>
+<div class="interpretation"><div><b>发生了什么：</b>12期与首次成交均构成7月GMV主体。</div><div><b>意味着什么：</b>7月GMV呈现清楚的期限与成交阶段结构特征。</div><div><b>还不能说明：</b>结构不能证明业务价值更高，也不能直接说明增长的真实原因；跨维度不可相加。</div></div>
+      <div class="page-foot"><span>依据：底表16有效成交逐笔汇总；金额段和类型明细见附录。</span><span>GMV按成交时间入月；小组和销售为正常历史归属，受限成交单列。</span></div>
+    </section><section class="page" id="p4" aria-labelledby="h4">
+      <div class="page-head"><span class="eyebrow">南京分行 · 2026年7月经营复盘</span><span class="page-no">P4 / 8</span></div>
+      <h1 id="h4">一组量增额降，四组量价同升，二、三组形成新增规模</h1><p class="page-intro">四组只占一页，作为分行经营结果的组织落点；方向符号表达状态，不构成名次。</p>
+<div class="main-figure "><h2 class="chart-title">一组量增额降，四组量价同升；二、三组形成新增规模</h2><div class="state-list"><div class="state-band"><div class="state-name"><b>一组</b><span class="state-label watch">量增额降</span></div><div class="state-main"><b>206.89万</b><span>正常历史归属</span></div><div class="state-signs"><span>量 <b>↑ 199→227</b></span><span>价 <b>↓ 11,231→9,114元</b></span><span>GMV <b class="watch">−16.61万</b></span></div></div><div class="state-band"><div class="state-name"><b>二组</b><span class="state-label neutral">新增基期</span></div><div class="state-main"><b>138.97万</b><span>6月正常归属基期0</span></div><div class="state-signs"><span>量 <b>新增114笔</b></span><span>价 <b>—</b></span><span>GMV <b class="neutral">新增规模</b></span></div></div><div class="state-band"><div class="state-name"><b>三组</b><span class="state-label neutral">新增基期</span></div><div class="state-main"><b>94.79万</b><span>6月正常归属基期0</span></div><div class="state-signs"><span>量 <b>新增105笔</b></span><span>价 <b>—</b></span><span>GMV <b class="neutral">新增规模</b></span></div></div><div class="state-band"><div class="state-name"><b>四组</b><span class="state-label good">量价同升</span></div><div class="state-main"><b>117.14万</b><span>正常历史归属</span></div><div class="state-signs"><span>量 <b>↑ 39→109</b></span><span>价 <b>↑ 9,974→10,747元</b></span><span>GMV <b class="good">+78.24万</b></span></div></div></div><p class=source-note>二、三组6月正常归属基期为0，不计算增长率或笔均变化。</p></div>
+<div class="restricted"><span>组织受限成交单列</span><b>13.00万 · 61笔</b><span>计入分行GMV，不进入正常小组/销售比较。</span></div>
+<div class="interpretation"><div><b>发生了什么：</b>四组呈现量增额降、新增规模、量价同升三种状态。</div><div><b>意味着什么：</b>分行增长在组织层并不均匀，需要结合案例继续理解。</div><div><b>还不能说明：</b>客户来源、实际销售动作与组织资格的业务原因。</div></div>
+      <div class="page-foot"><span>依据：底表02、03；组织受限单列，零基期不算增长率。</span><span>GMV按成交时间入月；小组和销售为正常历史归属，受限成交单列。</span></div>
+    </section><section class="page" id="p5" aria-labelledby="h5">
+      <div class="page-head"><span class="eyebrow">南京分行 · 2026年7月经营复盘</span><span class="page-no">P5 / 8</span></div>
+      <h1 id="h5">7月出现三个值得持续关注的经营信号：量、结构与组织差异</h1><p class="page-intro">前四页已经给出证据；这一页只提炼管理层后续值得跟踪的三个信号。</p><div class="signal-list"><div class="signal-row"><div class="signal-index">01</div><div class="signal-thesis"><h2>规模增长明显，主要依靠“量”</h2><p>成交笔数248→616，笔均10,665→9,266元。</p></div><div class="signal-evidence"><b>+306.30万</b><div class="signal-track"><span style="width:40.3%"></span><span class="full"></span></div><small>GMV净增 · 量增价降</small></div><div class="signal-meaning">管理含义：持续看成交数量能否延续，以及笔均是否继续回落。</div></div><div class="signal-row"><div class="signal-index">02</div><div class="signal-thesis"><h2>增长呈现清楚的成交结构特征</h2><p>期限、成交序次和金额段分别观察，不能跨维度相加。</p></div><div class="signal-evidence"><b>69.70%</b><small>12期占7月GMV</small></div><div class="signal-meaning">首次成交514.29万；2万—3万元段增量+106.20万。这些是结构线索，不是业务原因。</div></div><div class="signal-row"><div class="signal-index">03</div><div class="signal-thesis"><h2>同一分行背景下，组织状态出现差异</h2><p>一组量增额降；四组量价同升；二、三组形成新增规模。</p></div><div class="signal-evidence"><b class="signal-small">三种状态</b><div class="signal-states"><span>量增额降</span><span>新增规模</span><span>量价同升</span></div></div><div class="signal-meaning">管理含义：用同一路径看正向与承压案例，再核真实业务过程。</div></div></div>
+<div class="interpretation"><div><b>发生了什么：</b>量驱动增长、结构集中、组织状态分化同时出现。</div><div><b>意味着什么：</b>8月需同时跟踪规模、结构和组织案例。</div><div><b>还不能说明：</b>这些信号能否持续，以及背后的真实业务机制。</div></div>
+      <div class="page-foot"><span>依据：P1—P4已验证事实；本页只提炼，不新增计算口径。</span><span>GMV按成交时间入月；小组和销售为正常历史归属，受限成交单列。</span></div>
+    </section><section class="page" id="p6" aria-labelledby="h6">
+      <div class="page-head"><span class="eyebrow">南京分行 · 2026年7月经营复盘</span><span class="page-no">P6 / 8</span></div>
+      <h1 id="h6">当前需要关注的是四种不同性质的问题</h1><p class="page-intro">这是四种不同性质的问题，分属目标、量价、组织和数据治理；金额互有包含关系，不能排序或相加。</p>
+<div class="problem-root">南京分行7月经营结果 <b>570.79万</b></div><div class="problem-connector"></div><div class="problem-grid"><div class="problem-branch"><span class="problem-kind">结果问题</span><h2>距正式目标仍有差额</h2><div class="problem-value watch">173.21万</div><p>7月实际570.79万，目标744.00万。</p><small>回答：经营结果距离正式目标还有多少。</small></div><div class="problem-branch"><span class="problem-kind">增长质量问题</span><h2>单位成交金额回落</h2><div class="problem-value watch">10,665 → 9,266元</div><p>笔均数学项−60.43万。</p><small>回答：规模增长时，笔均如何变化。</small></div><div class="problem-branch"><span class="problem-kind">组织差异问题</span><h2>一组量增额降</h2><div class="problem-value watch">−16.61万</div><p>笔数199→227，GMV却下降。</p><small>回答：差异落在哪些成交结构。</small></div><div class="problem-branch"><span class="problem-kind">数据 / 归属治理</span><h2>受限成交需先核资格</h2><div class="problem-value neutral">13.00万 / 61笔</div><p>计入分行，不进入正常小组比较。</p><small>回答：哪些交易具有正常历史归属。</small></div></div>
+<div class="interpretation"><div><b>发生了什么：</b>目标差额、笔均回落、一组差异与受限归属分别需要处理。</div><div><b>意味着什么：</b>先分清问题性质，再选择不同的核查路径。</div><div><b>还不能说明：</b>四项金额不是同口径损失，也不能证明客户、销售或管理原因。</div></div>
+      <div class="page-foot"><span>依据：底表01—03、15—16；四分支不是金额排序或风险评分。</span><span>GMV按成交时间入月；小组和销售为正常历史归属，受限成交单列。</span></div>
+    </section><section class="page" id="p7" aria-labelledby="h7">
+      <div class="page-head"><span class="eyebrow">南京分行 · 2026年7月经营复盘</span><span class="page-no">P7 / 8</span></div>
+      <h1 id="h7">一组与四组说明：同是笔数增加，笔均变化方向却不同</h1><p class="page-intro">两例采用相同路径：结果 → 量价 → 结构 → 人员线索 → 待核问题。人员仅是定位线索，完整明细在附录。</p><div class="case-columns"><div class="case-column"><h2>案例 A｜一组：量增额降</h2><div class="result">223.50万 → 206.89万</div>
+<div class="case-step"><strong>结果</strong>正常GMV−16.61万；笔数199→227。</div>
+<div class="case-step"><strong>量价</strong><div class="signed"><span>笔数项+28.48万</span><span class="minus">笔均项−45.09万</span></div></div>
+<div class="case-step"><strong>结构</strong>首次−29.96万；18期−19.43万；1.5万—2万元段−16.10万。<br>2万—3万元段+18.70万；后续+13.36万。</div>
+<div class="case-step"><strong>人员线索</strong>销售 <code>4283834183350590</code> 正常GMV+17.55万；一组另有两名销售ID出现受限交易，需先核归属。</div>
+<div class="case-step"><strong>待核问题</strong>金额结构和组织资格为何变化？不同结构维度不可相加。</div></div><div class="case-column good"><h2>案例 B｜四组：量价同升</h2><div class="result">38.90万 → 117.14万</div>
+<div class="case-step"><strong>结果</strong>正常GMV+78.24万；笔数39→109。</div>
+<div class="case-step"><strong>量价</strong><div class="signed"><span>笔数项+72.52万</span><span>笔均项+5.72万</span></div></div>
+<div class="case-step"><strong>结构</strong>12期增量+51.41万；1.5万—2万元段+30.25万。两维不能相加。</div>
+<div class="case-step"><strong>人员线索</strong>销售 <code>3468744720360793</code> 正常GMV+54.80万，笔数2→42；6月基期仅2笔。</div>
+<div class="case-step"><strong>待核问题</strong>客户来源、承接与实际动作是什么？是否可复用尚无证据。</div></div></div>
+<div class="interpretation"><div><b>发生了什么：</b>一组笔数增加但GMV下降；四组笔数和笔均同升。</div><div><b>意味着什么：</b>相同的笔数增长可以伴随不同金额结果，需继续看结构。</div><div><b>还不能说明：</b>任何销售或组长的能力高低，以及四组经验能否直接复制。</div></div>
+      <div class="page-foot"><span>依据：底表02—04、06、08、09、16；销售仅作案例线索。</span><span>GMV按成交时间入月；小组和销售为正常历史归属，受限成交单列。</span></div>
+    </section><section class="page" id="p8" aria-labelledby="h8">
+      <div class="page-head"><span class="eyebrow">南京分行 · 2026年7月经营复盘</span><span class="page-no">P8 / 8</span></div>
+      <h1 id="h8">8月按六条路径跟踪结果、验证结构与真实业务过程</h1><p class="page-intro">每项都沿同一路径：7月证据 → 8月怎样验证 → 想回答什么。跟踪不是预设结果，更不是新增团队目标。</p>
+<div class="plan-head"><span>关注什么 · 7月证据</span><span>怎么验证</span><span>想回答什么</span></div><div class="plan-list"><div class="plan-row"><div class="plan-focus"><span>01</span><b>成交规模与目标</b><small>7月570.79万，目标缺口173.21万</small></div><div class="plan-verify">8月持续跟踪GMV、成交笔数与日均GMV；目标差距仅对照届时确认的分行正式目标。</div><div class="plan-question">7月规模增长能否延续？</div></div><div class="plan-row"><div class="plan-focus"><span>02</span><b>笔均变化</b><small>7月笔均9,266元，较6月回落</small></div><div class="plan-verify">继续拆金额段、期数、首次/后续与具体业务条件。</div><div class="plan-question">笔均下降主要落在哪些成交结构？</div></div><div class="plan-row"><div class="plan-focus"><span>03</span><b>四组正向案例</b><small>7月GMV+78.24万，量价同升</small></div><div class="plan-verify">业务侧了解客户来源、承接方式与实际销售动作。</div><div class="plan-question">是否存在经验证可复用的经验？</div></div><div class="plan-row"><div class="plan-focus"><span>04</span><b>二、三组新增规模</b><small>138.97万 / 94.79万</small></div><div class="plan-verify">观察8月持续成交，并了解客户与业务来源。</div><div class="plan-question">7月形成的正常规模是否持续？</div></div><div class="plan-row"><div class="plan-focus"><span>05</span><b>一组量增额降</b><small>笔数199→227，GMV−16.61万</small></div><div class="plan-verify">继续核笔均、金额段、首次/后续、期数及组织归属。</div><div class="plan-question">差异落在哪些结构，真实背景是什么？</div></div><div class="plan-row"><div class="plan-focus"><span>06</span><b>组织受限成交</b><small>13.00万 / 61笔</small></div><div class="plan-verify">核申请日资格、历史归属及当前承接。</div><div class="plan-question">哪些成交具备正常经营归属？</div></div></div>
+<div class="action-closing">先持续跟踪结果，再验证真实业务过程；只有被验证的经验和问题，才进入后续经营动作。</div>
+      <div class="page-foot"><span>依据：P1—P7已呈现的经营事实；未设小组或个人目标。</span><span>GMV按成交时间入月；小组和销售为正常历史归属，受限成交单列。</span></div>
+    </section><section class="appendix" id="appendix"><div class="page-head"><span class="eyebrow">南京分行 · 2026年7月经营复盘</span><span class="page-no">附录</span></div><h1>追溯与验证</h1><p>正文回答经营问题；此处保留明细和口径。各结构维度是对同一批交易的不同切片，不能跨维度加总。</p>
+<details><summary>附录 A｜完整销售正常经营明细（36个ID）</summary><div class="inner"><div class="table-wrap"><table class="sales-table"><thead><tr><th>历史归属组</th><th>销售ID</th><th>6月GMV</th><th>7月GMV</th><th>变化</th><th>笔数6→7</th><th>7月笔均(元)</th><th>7月同ID受限笔数</th></tr></thead><tbody><tr><td>南京一组</td><td>36014176457200</td><td>60.00万</td><td>54.71万</td><td>−5.29万</td><td>51→49</td><td>11,164</td><td>0</td></tr><tr><td>南京一组</td><td>1034743667049466</td><td>36.90万</td><td>52.57万</td><td>+15.67万</td><td>34→71</td><td>7,404</td><td>0</td></tr><tr><td>南京一组</td><td>4283834183350590</td><td>22.70万</td><td>40.25万</td><td>+17.55万</td><td>25→56</td><td>7,188</td><td>0</td></tr><tr><td>南京一组</td><td>343581453377178</td><td>0.00万</td><td>23.29万</td><td>+23.29万</td><td>0→23</td><td>10,126</td><td>11</td></tr><tr><td>南京一组</td><td>3265122367633865</td><td>0.00万</td><td>21.66万</td><td>+21.66万</td><td>0→15</td><td>14,437</td><td>0</td></tr><tr><td>南京一组</td><td>3909184101343285</td><td>0.00万</td><td>9.62万</td><td>+9.62万</td><td>0→8</td><td>12,025</td><td>0</td></tr><tr><td>南京一组</td><td>1545907855998877</td><td>0.00万</td><td>2.10万</td><td>+2.10万</td><td>0→2</td><td>10,500</td><td>0</td></tr><tr><td>南京一组</td><td>4304830955577835</td><td>0.00万</td><td>1.70万</td><td>+1.70万</td><td>0→2</td><td>8,500</td><td>0</td></tr><tr><td>南京一组</td><td>1054609657202240</td><td>0.00万</td><td>1.00万</td><td>+1.00万</td><td>0→1</td><td>10,000</td><td>0</td></tr><tr><td>南京一组</td><td>1153724231657054</td><td>1.60万</td><td>0.00万</td><td>−1.60万</td><td>2→0</td><td>—</td><td>5</td></tr><tr><td>南京一组</td><td>1205762339481665</td><td>39.65万</td><td>0.00万</td><td>−39.65万</td><td>30→0</td><td>—</td><td>12</td></tr><tr><td>南京一组</td><td>1315843059153146</td><td>0.00万</td><td>0.00万</td><td>0.00万</td><td>0→0</td><td>—</td><td>0</td></tr><tr><td>南京一组</td><td>1635557002440037</td><td>6.10万</td><td>0.00万</td><td>−6.10万</td><td>7→0</td><td>—</td><td>3</td></tr><tr><td>南京一组</td><td>1988829740854125</td><td>0.90万</td><td>0.00万</td><td>−0.90万</td><td>1→0</td><td>—</td><td>0</td></tr><tr><td>南京一组</td><td>2454569487508347</td><td>0.00万</td><td>0.00万</td><td>0.00万</td><td>0→0</td><td>—</td><td>0</td></tr><tr><td>南京一组</td><td>2707782228959433</td><td>16.60万</td><td>0.00万</td><td>−16.60万</td><td>18→0</td><td>—</td><td>14</td></tr><tr><td>南京一组</td><td>3102997052620939</td><td>0.00万</td><td>0.00万</td><td>0.00万</td><td>0→0</td><td>—</td><td>4</td></tr><tr><td>南京一组</td><td>3208615155170835</td><td>0.00万</td><td>0.00万</td><td>0.00万</td><td>0→0</td><td>—</td><td>0</td></tr><tr><td>南京一组</td><td>3563721992181826</td><td>0.00万</td><td>0.00万</td><td>0.00万</td><td>0→0</td><td>—</td><td>0</td></tr><tr><td>南京一组</td><td>3671005446829396</td><td>37.45万</td><td>0.00万</td><td>−37.45万</td><td>29→0</td><td>—</td><td>9</td></tr><tr><td>南京一组</td><td>3986757491312714</td><td>0.00万</td><td>0.00万</td><td>0.00万</td><td>0→0</td><td>—</td><td>0</td></tr><tr><td>南京一组</td><td>4243957073215000</td><td>0.00万</td><td>0.00万</td><td>0.00万</td><td>0→0</td><td>—</td><td>0</td></tr><tr><td>南京一组</td><td>4376271921262448</td><td>1.60万</td><td>0.00万</td><td>−1.60万</td><td>2→0</td><td>—</td><td>3</td></tr><tr><td>南京二组</td><td>4255458962006162</td><td>0.00万</td><td>65.80万</td><td>+65.80万</td><td>0→55</td><td>11,964</td><td>0</td></tr><tr><td>南京二组</td><td>4198995776106658</td><td>0.00万</td><td>26.05万</td><td>+26.05万</td><td>0→21</td><td>12,405</td><td>0</td></tr><tr><td>南京二组</td><td>95141293146759</td><td>0.00万</td><td>20.45万</td><td>+20.45万</td><td>0→13</td><td>15,731</td><td>0</td></tr><tr><td>南京二组</td><td>1267927831074234</td><td>0.00万</td><td>16.01万</td><td>+16.01万</td><td>0→17</td><td>9,419</td><td>0</td></tr><tr><td>南京二组</td><td>3180697108185724</td><td>0.00万</td><td>9.05万</td><td>+9.05万</td><td>0→6</td><td>15,083</td><td>0</td></tr><tr><td>南京二组</td><td>3088189244655434</td><td>0.00万</td><td>1.60万</td><td>+1.60万</td><td>0→2</td><td>8,000</td><td>0</td></tr><tr><td>南京三组</td><td>2854280466939938</td><td>0.00万</td><td>36.54万</td><td>+36.54万</td><td>0→47</td><td>7,775</td><td>0</td></tr><tr><td>南京三组</td><td>2728201227027583</td><td>0.00万</td><td>30.75万</td><td>+30.75万</td><td>0→37</td><td>8,310</td><td>0</td></tr><tr><td>南京三组</td><td>281993739654016</td><td>0.00万</td><td>19.00万</td><td>+19.00万</td><td>0→13</td><td>14,616</td><td>0</td></tr><tr><td>南京三组</td><td>818248851923101</td><td>0.00万</td><td>8.50万</td><td>+8.50万</td><td>0→8</td><td>10,626</td><td>0</td></tr><tr><td>南京四组</td><td>3468744720360793</td><td>2.60万</td><td>57.40万</td><td>+54.80万</td><td>2→42</td><td>13,667</td><td>0</td></tr><tr><td>南京四组</td><td>2559781086478740</td><td>36.30万</td><td>41.69万</td><td>+5.39万</td><td>37→54</td><td>7,721</td><td>0</td></tr><tr><td>南京四组</td><td>1694034504729947</td><td>0.00万</td><td>18.05万</td><td>+18.05万</td><td>0→13</td><td>13,885</td><td>0</td></tr></tbody></table></div><p>销售ID按历史归属，不等于当前客户承接人；同ID受限交易不计入正常GMV。</p></div></details>
+<details><summary>附录 B｜累计首绑漏斗核查线索</summary><div class="inner"><div class="table-wrap"><table class="sales-table"><thead><tr><th>漏斗区间</th><th>N</th><th>A</th><th>D</th><th>C</th><th>W</th><th>C/D</th></tr></thead><tbody><tr><td>注册→认证</td><td>2859</td><td>0</td><td>2859</td><td>2740</td><td>119</td><td>95.84%</td></tr><tr><td>认证→授信发起</td><td>2740</td><td>22</td><td>2718</td><td>2678</td><td>40</td><td>98.53%</td></tr><tr><td>授信发起→成功</td><td>2704</td><td>0</td><td>2704</td><td>1544</td><td>1160</td><td>57.10%</td></tr><tr><td>授信成功→申请</td><td>1544</td><td>0</td><td>1544</td><td>737</td><td>807</td><td>47.73%</td></tr><tr><td>首次申请→成交</td><td>737</td><td>0</td><td>737</td><td>718</td><td>19</td><td>97.42%</td></tr></tbody></table></div><p>截至7月31日累计首绑用户集合。首绑组和首绑销售不等于成交业绩归属；等待不等于未跟进。</p></div></details>
+<details><summary>附录 C｜7月组织受限交易明细（61笔）</summary><div class="inner"><div class="table-wrap"><table class="sales-table"><thead><tr><th>源表行号</th><th>标的ID</th><th>发标销售ID</th><th>申请时间</th><th>成交时间</th><th>GMV</th><th>受限原因</th></tr></thead><tbody><tr><td>401</td><td>3003106962417544</td><td>4376271921262448</td><td>2026-07-01 18:07:25</td><td>2026-07-01 18:16:01</td><td>0.23万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>409</td><td>1473926030454711</td><td>2707782228959433</td><td>2026-07-02 12:38:46</td><td>2026-07-02 12:41:01</td><td>0.08万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>412</td><td>1229073872953096</td><td>1635557002440037</td><td>2026-07-02 15:20:07</td><td>2026-07-02 15:26:00</td><td>0.05万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>418</td><td>2745614359778923</td><td>2707782228959433</td><td>2026-07-02 19:41:20</td><td>2026-07-02 19:46:01</td><td>0.70万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>422</td><td>479061734891814</td><td>1205762339481665</td><td>2026-07-02 20:24:30</td><td>2026-07-02 20:29:01</td><td>0.08万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>448</td><td>678898821958346</td><td>2707782228959433</td><td>2026-07-05 15:13:46</td><td>2026-07-05 15:17:00</td><td>1.00万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>474</td><td>1468812979826072</td><td>1153724231657054</td><td>2026-07-07 13:56:32</td><td>2026-07-07 14:02:01</td><td>0.30万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>508</td><td>2499738569433300</td><td>1205762339481665</td><td>2026-07-09 15:37:22</td><td>2026-07-09 15:41:01</td><td>0.10万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>519</td><td>1216725624189423</td><td>2707782228959433</td><td>2026-07-09 20:50:06</td><td>2026-07-09 20:54:01</td><td>0.07万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>522</td><td>600442669836960</td><td>1153724231657054</td><td>2026-07-10 09:58:58</td><td>2026-07-10 10:03:02</td><td>0.10万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>542</td><td>3893632371633814</td><td>3102997052620939</td><td>2026-07-11 13:49:30</td><td>2026-07-11 13:53:01</td><td>0.24万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>571</td><td>4271766071662412</td><td>1205762339481665</td><td>2026-07-13 09:27:27</td><td>2026-07-13 09:36:01</td><td>0.30万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>576</td><td>1095887180279334</td><td>2707782228959433</td><td>2026-07-13 14:47:03</td><td>2026-07-13 14:54:02</td><td>0.04万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>582</td><td>1566860153774931</td><td>1153724231657054</td><td>2026-07-13 19:29:52</td><td>2026-07-13 19:34:01</td><td>0.50万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>589</td><td>1670932178814919</td><td>1205762339481665</td><td>2026-07-13 23:48:07</td><td>2026-07-13 23:51:01</td><td>0.27万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>674</td><td>3158645806784218</td><td>343581453377178</td><td>2026-07-17 11:22:55</td><td>2026-07-17 11:27:03</td><td>1.70万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>689</td><td>770398981561016</td><td>2707782228959433</td><td>2026-07-17 17:17:14</td><td>2026-07-17 17:21:01</td><td>0.17万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>693</td><td>2626871379094450</td><td>343581453377178</td><td>2026-07-17 23:30:51</td><td>2026-07-17 23:34:01</td><td>1.00万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>696</td><td>2564917550837123</td><td>2707782228959433</td><td>2026-07-18 00:31:05</td><td>2026-07-18 00:34:01</td><td>0.10万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>722</td><td>2329006541811765</td><td>3671005446829396</td><td>2026-07-18 17:15:28</td><td>2026-07-18 17:19:01</td><td>0.06万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>735</td><td>3698910126059247</td><td>1205762339481665</td><td>2026-07-19 13:17:10</td><td>2026-07-19 13:21:02</td><td>0.18万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>752</td><td>19352704017176</td><td>1635557002440037</td><td>2026-07-20 04:44:32</td><td>2026-07-20 04:48:02</td><td>0.04万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>754</td><td>827288090027283</td><td>2707782228959433</td><td>2026-07-20 09:11:34</td><td>2026-07-20 09:15:00</td><td>0.17万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>755</td><td>2715249232385918</td><td>2707782228959433</td><td>2026-07-20 09:20:55</td><td>2026-07-20 09:25:01</td><td>0.15万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>757</td><td>2620948194483272</td><td>3102997052620939</td><td>2026-07-20 09:37:01</td><td>2026-07-20 09:43:01</td><td>0.12万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>778</td><td>1554877487736778</td><td>343581453377178</td><td>2026-07-20 14:22:12</td><td>2026-07-20 14:28:01</td><td>0.02万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>784</td><td>3113219925558518</td><td>1153724231657054</td><td>2026-07-20 16:20:18</td><td>2026-07-20 16:24:01</td><td>0.28万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>790</td><td>3541344592817785</td><td>1205762339481665</td><td>2026-07-20 20:20:55</td><td>2026-07-20 20:24:02</td><td>0.00万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>791</td><td>2908936383850691</td><td>1205762339481665</td><td>2026-07-20 20:38:39</td><td>2026-07-20 20:42:01</td><td>0.00万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>860</td><td>1532337923308688</td><td>2707782228959433</td><td>2026-07-22 17:33:13</td><td>2026-07-22 17:41:02</td><td>0.03万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>863</td><td>1401240986505766</td><td>1205762339481665</td><td>2026-07-22 20:25:22</td><td>2026-07-22 20:30:01</td><td>0.06万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>873</td><td>1658348395372936</td><td>343581453377178</td><td>2026-07-23 13:53:10</td><td>2026-07-23 13:57:01</td><td>0.42万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>900</td><td>1726271733888012</td><td>3671005446829396</td><td>2026-07-24 11:46:22</td><td>2026-07-24 11:50:01</td><td>0.08万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>930</td><td>3476347015415964</td><td>1205762339481665</td><td>2026-07-25 18:54:26</td><td>2026-07-25 18:57:01</td><td>0.08万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>944</td><td>3581446737580511</td><td>1635557002440037</td><td>2026-07-26 16:06:29</td><td>2026-07-26 16:11:01</td><td>0.27万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>976</td><td>4116665036969549</td><td>343581453377178</td><td>2026-07-27 16:22:55</td><td>2026-07-27 16:56:01</td><td>0.01万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>983</td><td>115815052462531</td><td>3671005446829396</td><td>2026-07-27 21:34:02</td><td>2026-07-27 21:37:01</td><td>0.08万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>990</td><td>1308770761402298</td><td>3671005446829396</td><td>2026-07-27 23:32:47</td><td>2026-07-27 23:36:01</td><td>0.10万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>1014</td><td>3289061352444639</td><td>2707782228959433</td><td>2026-07-28 15:30:41</td><td>2026-07-28 15:35:01</td><td>0.09万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>1015</td><td>1617927352330409</td><td>1205762339481665</td><td>2026-07-28 16:12:19</td><td>2026-07-28 16:16:01</td><td>0.09万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>1023</td><td>3392834538080044</td><td>3102997052620939</td><td>2026-07-28 19:06:51</td><td>2026-07-28 19:11:01</td><td>0.06万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>1031</td><td>1585216200062556</td><td>343581453377178</td><td>2026-07-28 20:55:22</td><td>2026-07-28 21:29:01</td><td>0.03万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>1034</td><td>3349307823683866</td><td>343581453377178</td><td>2026-07-28 22:33:29</td><td>2026-07-28 23:07:01</td><td>0.01万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>1040</td><td>2355870944763491</td><td>343581453377178</td><td>2026-07-29 07:40:46</td><td>2026-07-29 07:44:01</td><td>0.02万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>1044</td><td>1298683745880811</td><td>343581453377178</td><td>2026-07-29 10:39:33</td><td>2026-07-29 11:13:00</td><td>0.00万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>1069</td><td>1637481310195427</td><td>343581453377178</td><td>2026-07-29 14:51:13</td><td>2026-07-29 15:24:26</td><td>0.00万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>1090</td><td>2126753715462925</td><td>343581453377178</td><td>2026-07-29 20:10:21</td><td>2026-07-29 20:13:01</td><td>0.31万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>1093</td><td>2375831661039626</td><td>4376271921262448</td><td>2026-07-29 22:34:56</td><td>2026-07-29 22:39:00</td><td>0.25万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>1097</td><td>68941999652496</td><td>1205762339481665</td><td>2026-07-30 00:47:45</td><td>2026-07-30 00:51:01</td><td>0.62万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>1113</td><td>1093999889228065</td><td>3671005446829396</td><td>2026-07-30 13:56:01</td><td>2026-07-30 13:59:01</td><td>0.10万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>1115</td><td>2377977439338711</td><td>3102997052620939</td><td>2026-07-30 15:48:42</td><td>2026-07-30 15:52:01</td><td>0.00万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>1120</td><td>3788304491921156</td><td>2707782228959433</td><td>2026-07-30 17:51:46</td><td>2026-07-30 17:56:00</td><td>0.60万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>1121</td><td>4109873861279334</td><td>3671005446829396</td><td>2026-07-30 17:55:23</td><td>2026-07-30 18:01:01</td><td>0.44万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>1124</td><td>931936470390363</td><td>3671005446829396</td><td>2026-07-30 18:20:32</td><td>2026-07-30 18:26:02</td><td>0.46万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>1125</td><td>4130369395797002</td><td>3671005446829396</td><td>2026-07-30 18:32:40</td><td>2026-07-30 18:36:01</td><td>0.19万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>1134</td><td>1637742181239489</td><td>2707782228959433</td><td>2026-07-31 00:40:03</td><td>2026-07-31 00:44:01</td><td>0.05万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>1137</td><td>304375866708453</td><td>1153724231657054</td><td>2026-07-31 09:46:57</td><td>2026-07-31 09:51:00</td><td>0.15万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>1138</td><td>2353274921717831</td><td>4376271921262448</td><td>2026-07-31 10:25:49</td><td>2026-07-31 10:31:01</td><td>0.10万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>1142</td><td>3842432485798583</td><td>3671005446829396</td><td>2026-07-31 11:38:41</td><td>2026-07-31 11:41:01</td><td>0.10万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>1148</td><td>4361666798119941</td><td>1205762339481665</td><td>2026-07-31 15:38:38</td><td>2026-07-31 15:43:01</td><td>0.13万</td><td>当日不在岗、组织状态异常</td></tr><tr><td>1152</td><td>1344659143125490</td><td>2707782228959433</td><td>2026-07-31 18:01:46</td><td>2026-07-31 18:06:01</td><td>0.05万</td><td>当日不在岗、组织状态异常</td></tr></tbody></table></div><p>合计13.00万。组织资格按申请日核；这些交易计入分行，不分配至正常小组或销售。</p></div></details>
+<details><summary>附录 D｜分行业务结构明细</summary><div class="inner"><div class="table-wrap"><table class="sales-table"><thead><tr><th>结构维度</th><th>类别</th><th>6月GMV</th><th>7月GMV</th><th>变化</th><th>6月笔数</th><th>7月笔数</th></tr></thead><tbody><tr><td>期数</td><td>12</td><td>158.61万</td><td>397.86万</td><td>+239.24万</td><td>138</td><td>325</td></tr><tr><td>期数</td><td>6</td><td>57.69万</td><td>103.80万</td><td>+46.11万</td><td>62</td><td>127</td></tr><tr><td>期数</td><td>18</td><td>47.05万</td><td>54.50万</td><td>+7.45万</td><td>41</td><td>50</td></tr><tr><td>期数</td><td>1</td><td>0.00万</td><td>6.27万</td><td>+6.27万</td><td>0</td><td>45</td></tr><tr><td>期数</td><td>3</td><td>0.80万</td><td>4.54万</td><td>+3.74万</td><td>5</td><td>58</td></tr><tr><td>期数</td><td>9</td><td>0.34万</td><td>3.82万</td><td>+3.48万</td><td>2</td><td>11</td></tr><tr><td>首次/后续</td><td>首次</td><td>253.22万</td><td>514.29万</td><td>+261.07万</td><td>216</td><td>415</td></tr><tr><td>首次/后续</td><td>后续</td><td>11.27万</td><td>56.51万</td><td>+45.23万</td><td>32</td><td>201</td></tr><tr><td>金额段</td><td>1.5万-2万</td><td>72.60万</td><td>144.25万</td><td>+71.65万</td><td>40</td><td>81</td></tr><tr><td>金额段</td><td>2万-3万</td><td>37.90万</td><td>144.10万</td><td>+106.20万</td><td>16</td><td>59</td></tr><tr><td>金额段</td><td>5千-1万</td><td>72.73万</td><td>132.25万</td><td>+59.52万</td><td>89</td><td>162</td></tr><tr><td>金额段</td><td>1万-1.5万</td><td>62.80万</td><td>109.96万</td><td>+47.16万</td><td>47</td><td>85</td></tr><tr><td>金额段</td><td>0-5千</td><td>18.46万</td><td>40.23万</td><td>+21.76万</td><td>56</td><td>229</td></tr><tr><td>业务类型</td><td>现金</td><td>264.49万</td><td>570.33万</td><td>+305.83万</td><td>248</td><td>551</td></tr><tr><td>业务类型</td><td>二类户</td><td>0.00万</td><td>0.33万</td><td>+0.33万</td><td>0</td><td>18</td></tr><tr><td>业务类型</td><td>消费</td><td>0.00万</td><td>0.14万</td><td>+0.14万</td><td>0</td><td>47</td></tr><tr><td>业务类型</td><td>经营贷</td><td>0.00万</td><td>0.00万</td><td>0.00万</td><td>0</td><td>0</td></tr></tbody></table></div><p>来自底表16_成交明细，两月各维度分别与分行GMV及成交笔数对账。12期精确差额为+239.24万；显示的两个端点各自四舍五入后相减可能得到不同末位。</p></div></details>
+<details><summary>附录 E｜指标口径与比较边界</summary><div class="inner"><ul><li>有效成交：标的ID唯一、是否成交=1、状态=成交、成交时间有效并落入分析期间；GMV为同集合借款金额之和，不是收入、利润、余额或实际放款。</li><li>成交月按成交时间；正常历史小组/销售按发标销售ID和申请日组织日表连接。受限成交保留在分行总量。</li><li>笔数项＝Δ笔数×两期笔均平均；笔均项＝Δ笔均×两期笔数平均。数学桥接不证明业务因果。</li><li>首次/后续按用户成交笔序次，不等于源新客/老客标签或客户价值。</li><li>12期只代表成交期数结构；收益、风险、政策和激励方向尚未确认。</li><li>现金、消费、二类户、经营贷为源类型名称；正式产品定义未确认。经营贷在本期有效成交集合为0笔。</li><li>仅分行有正式月目标；二、三组6月正常归属基期为0，未计算增长率。</li><li>漏斗N、A、D、C、W为累计首次绑定用户口径，首绑销售、成交归属销售、当前承接人不能混用。</li></ul></div></details>
+<details><summary>附录 F｜核心数字对账</summary><div class="inner"><div class="table-wrap"><table class="sales-table"><thead><tr><th>期间</th><th>对账项目</th><th>本轮数值</th><th>对照数值</th><th>差额</th></tr></thead><tbody><tr><td>2026-06</td><td>GMV与老板版</td><td>2,644,937.00</td><td>2,644,937.00</td><td>0.00</td></tr><tr><td>2026-06</td><td>成交笔数与老板版</td><td>248.00</td><td>248.00</td><td>0.00</td></tr><tr><td>2026-06</td><td>成交用户与老板版</td><td>228.00</td><td>228.00</td><td>0.00</td></tr><tr><td>2026-06</td><td>正式目标与老板版</td><td>2,250,000.00</td><td>2,250,000.00</td><td>0.00</td></tr><tr><td>2026-06</td><td>分行GMV=四组+受限</td><td>2,644,937.00</td><td>2,644,937.00</td><td>0.00</td></tr><tr><td>2026-06</td><td>分行笔数=四组+受限</td><td>248.00</td><td>248.00</td><td>0.00</td></tr><tr><td>2026-06</td><td>正常GMV=销售合计</td><td>2,623,994.00</td><td>2,623,994.00</td><td>0.00</td></tr><tr><td>2026-06</td><td>正常GMV=首次后续合计</td><td>2,623,994.00</td><td>2,623,994.00</td><td>0.00</td></tr><tr><td>2026-06</td><td>12期GMV与老板版</td><td>1,586,138.00</td><td>1,586,138.00</td><td>0.00</td></tr><tr><td>2026-07</td><td>GMV与老板版</td><td>5,707,948.90</td><td>5,707,948.90</td><td>0.00</td></tr><tr><td>2026-07</td><td>成交笔数与老板版</td><td>616.00</td><td>616.00</td><td>0.00</td></tr><tr><td>2026-07</td><td>成交用户与老板版</td><td>497.00</td><td>497.00</td><td>0.00</td></tr><tr><td>2026-07</td><td>正式目标与老板版</td><td>7,440,000.00</td><td>7,440,000.00</td><td>0.00</td></tr><tr><td>2026-07</td><td>分行GMV=四组+受限</td><td>5,707,948.90</td><td>5,707,948.90</td><td>0.00</td></tr><tr><td>2026-07</td><td>分行笔数=四组+受限</td><td>616.00</td><td>616.00</td><td>0.00</td></tr><tr><td>2026-07</td><td>正常GMV=销售合计</td><td>5,577,914.90</td><td>5,577,914.90</td><td>0.00</td></tr><tr><td>2026-07</td><td>正常GMV=首次后续合计</td><td>5,577,914.90</td><td>5,577,914.90</td><td>0.00</td></tr><tr><td>2026-07</td><td>12期GMV与老板版</td><td>3,978,569.00</td><td>3,978,569.00</td><td>0.00</td></tr><tr><td>全期</td><td>标的ID重复</td><td>0.00</td><td>0.00</td><td>0.00</td></tr><tr><td>全期</td><td>组织日期+销售ID重复</td><td>0.00</td><td>0.00</td><td>0.00</td></tr><tr><td>全期</td><td>首次后续待核笔数</td><td>0.00</td><td>0.00</td><td>0.00</td></tr><tr><td>截至7月31日</td><td>认证→授信发起异常用户</td><td>22.00</td><td>22.00</td><td>0.00</td></tr></tbody></table></div><p>底表15各差额均为0；逐笔可追溯底表16，逐用户漏斗可追溯底表17。</p></div></details>
+<div class="source-line">来源：南京分行7月经营复盘分析底表.xlsx；南京分行7月经营复盘发现.md；V1 QA与此前确认的业务口径。未修改原始文件。</div></section></main></div><script>(function(){const links=[...document.querySelectorAll('.rail nav a')];const obs=new IntersectionObserver(es=>{es.forEach(x=>{if(x.isIntersecting){links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+x.target.id))}})},{rootMargin:'-15% 0px -65% 0px'});document.querySelectorAll('.page').forEach(x=>obs.observe(x));})();</script></body></html>
