@@ -6,7 +6,9 @@ let opener=null;
 document.querySelectorAll('[data-lightbox]').forEach(link=>link.addEventListener('click',event=>{
  if(event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;
  event.preventDefault();opener=link;
- photo.src=link.href;photo.alt=link.dataset.title;
+ const fullSrc=link.href;
+ if(photo.src!==fullSrc)photo.src=fullSrc;
+ photo.alt=link.dataset.title;photo.decoding='async';
  document.querySelector('#lightbox-title').textContent=link.dataset.title;
  stage.classList.remove('zoomed');zoom.textContent='原尺寸查看';zoom.setAttribute('aria-pressed','false');
  dialog.showModal();document.body.classList.add('modal-open');
